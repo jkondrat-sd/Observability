@@ -185,7 +185,7 @@ services:
   # Prometheus - Postgres Exporter
   # =========================
   postgres-exporter:
-    image: bitnami/postgres-exporter:latest
+    image: soldevelo/postgres-exporter:latest
     container_name: prometheus-postgres-exporter
     environment:
       DATA_SOURCE_NAME: postgresql://${DB_USERNAME}:${DB_PASSWORD}@postgres:5432/${DB_DATABASE}?sslmode=disable
